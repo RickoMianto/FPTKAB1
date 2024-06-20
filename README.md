@@ -2,7 +2,7 @@
 
 ## Teknologi Komputasi Awan
 
-### Kelas A
+### Kelas B
 
 #### Kelompok B1
 
@@ -16,7 +16,9 @@ Benjamin Khawarismi Habibi | 5027231031
 
 ## Permasalahan
 
-Anda adalah seorang lulusan Teknologi Informasi...
+Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kemampuan yang harus dimiliki adalah Keampuan merancang, membangun, mengelola aplikasi berbasis komputer menggunakan layanan awan untuk memenuhi kebutuhan organisasi.
+
+Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentiment Analysis dengan komponen Backend menggunakan python: sentiment-analysis.py dengan spesifikasi sebagai berikut
 
 ## Rancangan Arsitektur dan Tabel Harga Spesifikasi VM
 
