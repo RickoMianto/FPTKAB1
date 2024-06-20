@@ -44,6 +44,43 @@ Setelah melakukan analisis secara menyeluruh dan mempertimbangkan aspek harga da
 9. Jika tidak ada error, lakukan load testing menggunakan Locust...
 
 ## Endpoints
+1. **Analyze Text**
+   - **Endpoint:** `POST /analyze`
+   - **Description:** This endpoint accepts a text input and returns the sentiment score of the text.
+   - **Request:**
+     ```json
+     {
+        "text": "Your text here"
+     }
+     ```
+    - **Response:**
+      ```json
+      {
+        "sentiment": <sentiment_score>
+      }
+      ```
+
+2. **Retrieve History**
+   - **Endpoint:** `GET /history`
+   - **Description:** This endpoint retrieves the history of previously analyzed texts along with their sentiment scores.
+   - **Response:**
+     ```json
+     {
+      {
+        "text": "Your previous text here",
+        "sentiment": <sentiment_score>
+      },
+      ...
+     }
+     ```
+---
+
+Kemudian juga disediakan sebuah Frontend sederhana menggunakan [index.html](/Resources/FE/index.html) dan [styles.css](/Resources/FE/styles.css) dengan tampilan antarmuka sebagai berikut
+
+![alt text](image.png)
+
+Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutuhan aplikasi tersebut. Apabila dana maksimal yang diberikan adalah **1 juta rupiah per bulan (65 US$)**
+konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 
 ## Hasil Pengujian Setiap Endpoint
 
