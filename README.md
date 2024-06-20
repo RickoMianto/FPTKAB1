@@ -29,6 +29,7 @@ Setelah melakukan analisis secara menyeluruh dan mempertimbangkan aspek harga da
 
 ![Arsitektur](images/arsitektur.png)
 ![Tabel Harga](images/tabel_harga.png)
+![fptka 2](https://github.com/RickoMianto/FPTKAB1/assets/149749135/55e2834f-22f7-418b-b068-31475958db5a)
 
 ## Langkah Implementasi dan Konfigurasi Teknologi
 
