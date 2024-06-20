@@ -101,10 +101,7 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 
 ## Kesimpulan dan Saran
 
-- Setelah percobaan yang kami lakukan dengan menggunakan tiga worker, berupa satu backend dan dua frontend, dikarenakan kami hanya menggunakan dua node balancer agar bisa seimbang dengan tiga worker serta menjaga status agar tetap sehat.
-
-<img width="975" alt="Load balancingnya " src="https://github.com/RickoMianto/FPTKAB1/assets/149749135/7ffcb69e-ebc6-4c80-8a5a-41d9ce902b9c">
-Load balancer akan membantu mendistribusikan beban dengan efisien dan memberikan redundansi yang diperlukan untuk memastikan aplikasi tetap responsif dan dapat menangani beban yang tinggi.
+- Setelah percobaan yang kami lakukan dengan menggunakan tiga worker, berupa satu backend dan dua frontend, dikarenakan kami hanya menggunakan dua node balancer agar bisa seimbang dan bebannya merata.
 
 - Harga yang ditawarkan Digital Ocean lebih murah, namun perlu juga ditekankan bahwa kualitas dari digital ocean ini kurang fleksibel untuk skala yang sangat besar dibandingkan dengan penyedia besar lainnya. Oleh karena itu, penting melihat skala mana yang akan dibuat sesuai kebutuhan yang ada. 
 ***Microsoft Azure*** opsi yang cukup baik untuk penggunaan banyak produk Microsoft dan memerlukan integrasi yang kuat, serta Cocok untuk aplikasi skala besar dan bisnis.
