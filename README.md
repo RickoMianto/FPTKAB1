@@ -88,11 +88,9 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 
 ## Hasil Pengujian Setiap Endpoint
 
-1. Get All Orders
-2. Get a Specific Orders by ID
-3. Create a New Order
-4. Update an Order by ID
-5. Delete an Order by ID
+1. Get History
+
+![Test End Point](https://github.com/RickoMianto/FPTKAB1/assets/149749135/d4de08da-2435-4bd8-a536-4fc6281ec49a)
 
 ## Hasil Pengujian dan analisis Loadtesting menggunakan Locust
 
