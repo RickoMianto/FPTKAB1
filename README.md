@@ -94,7 +94,7 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 4. Update an Order by ID
 5. Delete an Order by ID
 
-## Hasil Pengujian dan Analisis Loadtesting Locust
+## Hasil Pengujian dan analisis Loadtesting menggunakan Locust
 
 - RPS Maksimum...
 - Peak Concurrency Maksimum...
