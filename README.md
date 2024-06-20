@@ -27,6 +27,8 @@ Setelah melakukan analisis secara menyeluruh dan mempertimbangkan aspek harga da
 2. Performa Tinggi: Spesifikasi hardware yang ditawarkan Digital Ocean tergolong tangguh dan mampu memenuhi kebutuhan komputasi yang kompleks. Hal ini memungkinkan kami untuk menjalankan aplikasi dan beban kerja dengan lancar tanpa hambatan.
 3. Optimalisasi Performa Device: Berbeda dengan VM yang dapat membebani perangkat, Digital Ocean dirancang dengan mempertimbangkan efisiensi penggunaan sumber daya, sehingga meminimalisir dampak negatif terhadap performa device.
 
+![fptka](https://github.com/RickoMianto/FPTKAB1/assets/150517828/55c5569d-756e-4557-a1ae-88b45a9e8686)
+
 ![Arsitektur](images/arsitektur.png)
 ![Tabel Harga](images/tabel_harga.png)
 
