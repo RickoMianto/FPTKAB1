@@ -100,6 +100,8 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 - Peak Concurrency Maksimum ***700*** dengan Spawn Rate ***50***
 ![Peak 700, Spawn rate 50](https://github.com/RickoMianto/FPTKAB1/assets/149749135/4587fe1c-76e2-461e-8eae-54d81c46e32c)
 
+- Peak Concurrency ***250*** dengan Spawn Rate ***100***
+![Peak 250, Spawn 100](https://github.com/RickoMianto/FPTKAB1/assets/149749135/beeb5661-b7f0-4282-832a-243ae6b35051)
 
 ## Kesimpulan dan Saran
 
