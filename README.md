@@ -30,7 +30,7 @@ Setelah melakukan analisis secara menyeluruh dan mempertimbangkan aspek harga da
 * Berikut adalah rancangan arsitektur yang telah kami buat untuk final project kami
 ![fptka2](https://github.com/RickoMianto/FPTKAB1/assets/150517828/5ce41cbb-397c-4c22-9ca4-b8950c3c077e)
 
-
+* Berikut adalah tabel harga dan spesifikasi VM yang kami gunakan
 ![fptka](https://github.com/RickoMianto/FPTKAB1/assets/150517828/55c5569d-756e-4557-a1ae-88b45a9e8686)
 
 
