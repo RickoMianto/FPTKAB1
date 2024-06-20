@@ -95,11 +95,20 @@ konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 ## Hasil Pengujian dan analisis Loadtesting menggunakan Locust
 
 - RPS Maksimum...
-- Peak Concurrency Maksimum...
+
+- Peak Concurrency Maksimum ***700*** dengan Spawn Rate ***50***
+![Peak 700, Spawn rate 50](https://github.com/RickoMianto/FPTKAB1/assets/149749135/4587fe1c-76e2-461e-8eae-54d81c46e32c)
+
 
 ## Kesimpulan dan Saran
 
-- Setelah percobaan yang kami lakukan dengan menggunakan tiga worker, berupa satu backend dan dua frontend, dikarenakan kami hanya menggunakan dua node balancer agar bisa seimbang dan bebannya merata.
+- Setelah percobaan yang kami lakukan dengan menggunakan tiga worker, berupa satu backend dan dua frontend, dikarenakan kami hanya menggunakan dua node balancer supaya bisa seimbang dan bebannya merata.
+
+<img width="975" alt="Load balancingnya " src="https://github.com/RickoMianto/FPTKAB1/assets/149749135/f1968bd9-11af-4280-a6fa-6bffa8ea7a8c">
+
+Untuk Load balancer ini memang idealnya hanya 2 kapasitas droplet saja sehingga tidak mudah unutk down
+
+![Load Balancer](https://github.com/RickoMianto/FPTKAB1/assets/149749135/765fc2e4-a173-486f-8f4c-edde0fc18755)
 
 - Harga yang ditawarkan Digital Ocean lebih murah, namun perlu juga ditekankan bahwa kualitas dari digital ocean ini kurang fleksibel untuk skala yang sangat besar dibandingkan dengan penyedia besar lainnya. Oleh karena itu, penting melihat skala mana yang akan dibuat sesuai kebutuhan yang ada. 
 ***Microsoft Azure*** opsi yang cukup baik untuk penggunaan banyak produk Microsoft dan memerlukan integrasi yang kuat, serta Cocok untuk aplikasi skala besar dan bisnis.
