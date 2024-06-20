@@ -115,9 +115,22 @@ Untuk Load balancer ini memang idealnya hanya 2 kapasitas droplet saja sehingga 
 ***Google Cloud Platform (GCP)*** untuk memanfaatkan infrastruktur jaringan Google yang kuat.
 ***Amazon Web Services (AWS)*** Idealnya untuk aplikasi skala besar dan kompleks.
 
-- Terdapat banyak variabel yang berpengaruh dalam skenario pengujian Locust...
-- Kuantitas database juga dapat mempengaruhi performa...
+- Terdapat banyak variabel yang berpengaruh dalam skenario pengujian Locustb seperti : 
+Jumlah Users (Simulated Users)
+   - Spawn Rate
+   - Request Rate (RPS - Requests per Second)
+   - Durasi Pengujian
+   - Concurrency Level
+   - Endpoint yang Diuji
+   - Response Time
+   - Failure Rate
+   = Resource Utilization
+   - Network Latency/Jaringan Internet
 
-## About
+Jadi, perlu diketahui kebutuhan yang tepat agar penggunaan bisa dilakukan secara efisien dan tidak membuang budget yang sia-sia, serta bisa meminimalisir failure rate yang ada. Selain itu, jaringan internet perlu kualitas yang tinggi agar bisa dimanfaatkan secara maksimal.
 
-No description, website, or topics provided.
+ - Kuantitas database juga dapat mempengaruhi performa server/droplet yang kami buat karena beban worker VM untuk melakukan GET /history dan POST /anlayze juga semakin berat.
+
+
+## Terakhir 
+Terima kasih, sudah membaca
