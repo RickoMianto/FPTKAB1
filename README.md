@@ -79,7 +79,7 @@ Setelah melakukan analisis secara menyeluruh dan mempertimbangkan aspek harga da
 
 Kemudian juga disediakan sebuah Frontend sederhana menggunakan [index.html](/Resources/FE/index.html) dan [styles.css](/Resources/FE/styles.css) dengan tampilan antarmuka sebagai berikut
 
-![alt text](image.png)
+<img width="892" alt="Sentiment_analysis" src="https://github.com/RickoMianto/FPTKAB1/assets/149749135/a8b64d7a-db2e-4a15-8ff4-5be2649798e2">
 
 Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutuhan aplikasi tersebut. Apabila dana maksimal yang diberikan adalah **1 juta rupiah per bulan (65 US$)**
 konfigurasi cloud terbaik seperti apa yang bisa dibuat?
