@@ -239,6 +239,8 @@ Setiap VM worker dikonfigurasi dengan:
     ```bash
     sudo systemctl restart nginx
     ```
+## Link Video Untuk Demo : 
+https://youtu.be/BF4dtOtCGsE?si=VAqUeb5-GDCuO_G_
 
 ## Pengujian Endpoint
 ### Pengujian dengan Rest Client
@@ -253,9 +255,10 @@ Setiap VM worker dikonfigurasi dengan:
 
 ## Hasil Pengujian Load
 ### RPS Maksimum (60 detik)
-RPS maksimum yang dicapai selama stress testing adalah ~900-1000 RPS.
+RPS maksimum yang dicapai selama stress testing adalah kurang lebih 1000 RPS.
 
 ![1000 RPS (Tertinggi) ](https://github.com/RickoMianto/FPTKAB1/assets/149749135/36050c07-5c43-4b18-8cac-7877c90fd192)
+Sesuai gambar yang tertera, Rata-rata RPS yang dicapai tepatnya 1089. Dengan begitu, Rata rata RPS dengan failure 0% adalah 1089 RPS, maka nilainya 1089 / 200 x 30 = 163.35 poin
 
 
 ### Pengujian Peak Concurrency
