@@ -243,16 +243,20 @@ Setiap VM worker dikonfigurasi dengan:
 ## Pengujian Endpoint
 ### Pengujian dengan Rest Client
 - **Get All History**
-  ![Test End Point](https://github.com/RickoMianto/FPTKAB1-Revised/assets/149749135/7aeaf3bb-e6fa-4038-a070-390adab4d483)
+
+![Uji EndPoint History](https://github.com/RickoMianto/FPTKAB1/assets/149749135/b642f295-25ae-4973-8781-657d70e533cb)
 
 ### Pengujian dari Frontend
-![Frontend](link_gambar_di_sini)
+
+![Pengujian pada Front-End](https://github.com/RickoMianto/FPTKAB1/assets/149749135/14961778-ee2b-46b6-9057-caf1be3f0563)
+
 
 ## Hasil Pengujian Load
 ### RPS Maksimum (60 detik)
 RPS maksimum yang dicapai selama stress testing adalah ~900-1000 RPS.
 
-![RPS](link_gambar_di_sini)
+![1000 RPS (Tertinggi) ](https://github.com/RickoMianto/FPTKAB1/assets/149749135/36050c07-5c43-4b18-8cac-7877c90fd192)
+
 
 ### Pengujian Peak Concurrency
 - **1000 Concurrency/50 Spawn Rate**
@@ -281,9 +285,9 @@ Setelah melakukan re-konfigurasi, poin-poin penting adalah:
 ### Saran
 - **Jaringan dan Koneksi:** Pastikan koneksi internet stabil dan bandwidth mencukupi.
 - **Load Balancer Alternatif:** Pertimbangkan menggunakan VM sebagai load balancer alternatif.
-- **Skalabilitas:** Pertimbangkan kemampuan untuk menskalakan VM sesuai kebutuhan.
+- **Skalabilitas:** Pertimbangkan kemampuan untuk menskalakan VM sesuai kebutuhan(lebih tepatnya jangan berlebihan maupun kekurangan)
 - **Optimasi Performa Backend:** Optimalkan backend atau database untuk menangani beban lebih tinggi.
-- **Penghapusan Database sebelum Load Testing:** Lakukan penghapusan database sebelum uji locust untuk mendapat hasil terbaik 
+- **Penghapusan Database sebelum Load Testing:** Lakukan penghapusan database sebelum uji locust untuk mendapat hasil terbaik, serta lakukan penghapusan setiap ingin uji coba spawn rate baru. 
 
 ---
 
