@@ -12,7 +12,7 @@ Daffa Rajendra Priyatama | 5027231009
 Muhammad Faqih Husain | 5027231023
 Ricko Mianto Jaya Saputra | 5027231031
 Nicholas Arya Krisnugroho Rerangin | 5027231058
-Benjamin Khawarismi Habibi | 5027231078
+Benjamin Khawarizmi Habibi | 5027231078
 
 ## Daftar Isi
 - [Final Project Overview](#final-project-overview)
@@ -28,7 +28,7 @@ Benjamin Khawarismi Habibi | 5027231078
 - [Revisi, Kesimpulan, dan Saran](#revisi-kesimpulan-dan-saran)
 
 ## Final Project Overview
-Anda adalah seorang lulusan Teknologi Informasi dengan keahlian dalam merancang, membangun, dan mengelola aplikasi berbasis cloud. Dalam proyek ini, Anda ditugaskan untuk mendeploy aplikasi Analisis Sentimen menggunakan backend yang ditulis dalam Python (`sentiment-analysis.py`) dengan endpoint sebagai berikut:
+Kami adalah seorang lulusan Teknologi Informasi yang sedang mempelajari teknologi komputasi awan, maka dari itu kemampuan dalam merancang, membangun, dan mengelola aplikasi berbasis cloud perlu dikuatkan agar bisa menciptakan hasil yang jelas. Dalam proyek ini, Kami ditugaskan untuk mendeploy aplikasi Analisis Sentimen menggunakan backend yang ditulis dalam Python (`sentiment-analysis.py`) dengan endpoint sebagai berikut:
 
 ### Endpoint
 - **Analyze Text**
@@ -295,4 +295,6 @@ Setelah melakukan re-konfigurasi, poin-poin penting adalah:
 
 ---
 
-README ini memberikan gambaran komprehensif tentang setup, implementasi, dan hasil pengujian proyek ini. Silakan sesuaikan dan kembangkan sesuai kebutuhan.
+README ini memberikan gambaran komprehensif tentang setup, konfigurasinya, implementasi, dan hasil pengujian proyek ini. Jadi, dengan sepenuh hati silakan sesuaikan dan kembangkan sesuai kebutuhan secara realistis. 
+
+Terima kasih telah membaca
