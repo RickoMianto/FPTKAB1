@@ -284,6 +284,7 @@ Setelah melakukan re-konfigurasi, poin-poin penting adalah:
 - Desain layanan cloud stabil dan dapat menangani beban tinggi hingga 988 RPS.
 - Waktu respons meningkat signifikan setelah 800 RPS, menunjukkan adanya bottleneck.
 - Kapasitas maksimum efektif adalah 700-800 RPS.
+- Dengan Spesifikasi yang sedikit tinggi dari load balancernya daripada VM lainnya(dalam hal ini yang di akses oleh Load balancer), maka untuk mencapai Respon per Seconds(RPS) yang bagus kemungkinannnya cukup tinggi
 
 ### Saran
 - **Jaringan dan Koneksi:** Pastikan koneksi internet stabil dan bandwidth mencukupi.
