@@ -84,10 +84,8 @@ Setiap VM worker dikonfigurasi dengan:
 - Flask
 - Flask-CORS
 - TextBlob
-- PyMongo
 - Gunicorn
 - Gevent
-- MongoDB
 
 ### Setup Frontend
 1. Update dan instal Nginx:
@@ -103,6 +101,43 @@ Setiap VM worker dikonfigurasi dengan:
     mv fp-tka/Resources/FE/styles.css /var/www/html/styles.css
     sudo systemctl restart nginx
     ```
+3. Konfigurasi index.html agar menyambung dengan database MongoDB
+
+   ```
+    from flask import Flask, request, jsonify
+    from flask_cors import CORS
+    from textblob import TextBlob
+    from pymongo import MongoClient
+    
+    app = Flask(__name__)
+    CORS(app)
+    
+    # Database setup
+    client = MongoClient('mongodb+srv://doadmin:zCfS81973P256vyl@DBTKA-596049db.mongo.ondigitalocean.com/sentiment_analysis?tls=true&authSource=admin&replicaSet=DBTKA')
+    db = client.sentiment_analysis
+    collection = db.history
+    
+    @app.route('/analyze', methods=['POST'])
+    def analyze_sentiment():
+        data = request.get_json()
+        text = data.get('text', '')
+        analysis = TextBlob(text)
+        sentiment = analysis.sentiment.polarity
+    
+        # Save to database
+        collection.insert_one({'text': text, 'sentiment': sentiment})
+    
+        return jsonify({'sentiment': sentiment})
+    
+    @app.route('/history', methods=['GET'])
+    def get_history():
+        history = list(collection.find({},{'_id':0}).sort("_id",-1))
+        return jsonify(history)
+    
+    if __name__ == '__main__':
+        app.run(host='0.0.0.0', port=5000)
+        
+   ```
 
 3. Konfigurasi Nginx untuk frontend dan backend pada port yang sama:
     ```bash
@@ -126,13 +161,13 @@ Setiap VM worker dikonfigurasi dengan:
     Konfigurasi load balancer:
     ```nginx
     upstream backend_servers {
-      server 152.42.251.221;
-      server 128.199.103.250;
+      server 139.59.242.129;
+      server 165.22.61.134;
     }
 
     server {
       listen 80;
-      server_name 157.230.246.133;
+      server_name 178.128.16.27;
 
       location / {
         proxy_cache my_cache;
@@ -210,9 +245,6 @@ Setiap VM worker dikonfigurasi dengan:
 - **Get All History**
   ![Test End Point](https://github.com/RickoMianto/FPTKAB1-Revised/assets/149749135/7aeaf3bb-e6fa-4038-a070-390adab4d483)
 
-- **Create a New Text**
-  ![New Text](link_gambar_di_sini)
-
 ### Pengujian dari Frontend
 ![Frontend](link_gambar_di_sini)
 
@@ -223,35 +255,35 @@ RPS maksimum yang dicapai selama stress testing adalah ~900-1000 RPS.
 ![RPS](link_gambar_di_sini)
 
 ### Pengujian Peak Concurrency
-- **1000 Concurrency**
+- **1000 Concurrency/50 Spawn Rate**
   ![WhatsApp Image 2024-06-29 at 17 07 41_a551a50c](https://github.com/RickoMianto/FPTKAB1-Revised/assets/88548292/0f3acdd7-68e6-43f2-a80e-f45348f1f8d0)
 
-- **2000 Concurrency**
+- **2000 Concurrency/100 Spawn Rate**
   ![WhatsApp Image 2024-06-29 at 17 11 06_b712b553](https://github.com/RickoMianto/FPTKAB1-Revised/assets/88548292/26ea91b8-00c4-4eac-8317-1ef089f19604)
 
-- **3000 Concurrency**
+- **3000 Concurrency/200 Spawn Rate**
   ![WhatsApp Image 2024-06-29 at 17 16 10_95a14e26](https://github.com/RickoMianto/FPTKAB1-Revised/assets/88548292/fca47923-29d2-4f20-ad94-9adc5be5f5da)
 
-- **4000 Concurrency**
+- **4000 Concurrency/500 Spawn rate**
   ![WhatsApp Image 2024-06-29 at 17 20 00_990094d8](https://github.com/RickoMianto/FPTKAB1-Revised/assets/88548292/c0e7466d-5c6f-4660-98d2-b310c4f74134)
 
 ## Revisi, Kesimpulan, dan Saran
 ### Revisi
 Setelah melakukan re-konfigurasi, poin-poin penting adalah:
-- Pengujian dengan Locust menunjukkan bahwa desain cloud dapat menangani hingga 1015 RPS tanpa kegagalan, tetapi waktu respons meningkat setelah 600 RPS.
-- Rata-rata waktu respons stabil sekitar 200 ms pada beban rendah hingga menengah.
-- Kapasitas maksimum efektif adalah 600-700 RPS.
+- Pengujian dengan Locust menunjukkan bahwa desain cloud dapat menangani hingga 988 RPS tanpa kegagalan, tetapi waktu respons meningkat setelah 600 RPS.
+- Kapasitas maksimum efektif adalah 700-800 RPS.
 
 ### Kesimpulan
-- Desain layanan cloud stabil dan dapat menangani beban tinggi hingga 1015 RPS.
-- Waktu respons meningkat signifikan setelah 600 RPS, menunjukkan adanya bottleneck.
-- Kapasitas maksimum efektif adalah 600-700 RPS.
+- Desain layanan cloud stabil dan dapat menangani beban tinggi hingga 988 RPS.
+- Waktu respons meningkat signifikan setelah 800 RPS, menunjukkan adanya bottleneck.
+- Kapasitas maksimum efektif adalah 700-800 RPS.
 
 ### Saran
 - **Jaringan dan Koneksi:** Pastikan koneksi internet stabil dan bandwidth mencukupi.
 - **Load Balancer Alternatif:** Pertimbangkan menggunakan VM sebagai load balancer alternatif.
 - **Skalabilitas:** Pertimbangkan kemampuan untuk menskalakan VM sesuai kebutuhan.
 - **Optimasi Performa Backend:** Optimalkan backend atau database untuk menangani beban lebih tinggi.
+- **Penghapusan Database sebelum Load Testing:** Lakukan penghapusan database sebelum uji locust untuk mendapat hasil terbaik 
 
 ---
 
